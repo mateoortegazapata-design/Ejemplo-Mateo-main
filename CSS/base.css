@@ -13,6 +13,11 @@ body {
     padding-bottom: 20px;
 }
 
+body, p, td, th {
+    font-size: 1rem;
+}
+
+
 p {
     color: #333333; 
 }
@@ -179,12 +184,6 @@ nav ul li a:hover::after {
 }
 
 
-
-
-
-
-
-
 .main-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -215,7 +214,17 @@ nav ul li a:hover::after {
 }
 
 
-/* 5. TIPOGRAFÍA Y ENCABEZADOS DE SECCIÓN */
+
+/* 1. IMÁGENES RESPONSIVAS  */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-size: clamp(1.5rem, 5vw, 3rem);
+}
+
 h2 {
     color: #000000;
     font-size: 16pt;
@@ -223,6 +232,10 @@ h2 {
     margin-bottom: 10px;
     border-bottom: 2px solid #E94560;
     padding-bottom: 5px;
+}
+
+h2 {
+    font-size: clamp(1.2rem, 3.5vw, 2rem);
 }
 
 h3 {
